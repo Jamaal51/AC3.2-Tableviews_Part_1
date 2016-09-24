@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+internal struct Actor {
+    
+    internal var firstName: String
+    internal var lastName: String
+    
+    init(from data: String) {
+        let nameComponents: [String] = data.components(separatedBy: " ")
+        
+        if let firstName: String = nameComponents.first,
+        let lastName: String = nameComponents.last {
+            self.firstName = firstName
+            self.lastName = lastName
+        }
+        else {
+            firstName = "unset"
+            lastName = "unset"
+        }
+    }
+    
+}
