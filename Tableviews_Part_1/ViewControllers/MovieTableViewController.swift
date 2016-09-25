@@ -8,16 +8,24 @@
 
 import UIKit
 
+
 class MovieTableViewController: UITableViewController {
     
+    
+    enum Century: Int {
+        case Twenty
+        case TwentyFirst
+    }
+    
+    
     internal var movieData: [Movie]?
-
+    
     internal let rawMovieData: [[String : Any]] = movies
     let cellIdentifier: String = "MovieTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.title = "Movies"
         self.tableView.backgroundColor = UIColor.blue
         
@@ -29,26 +37,65 @@ class MovieTableViewController: UITableViewController {
         }
         movieData = movieContainer
     }
-
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movieData?.count ?? 0
+        guard let century = Century.init(rawValue: section), let data = byCentury(century)
+            else {
+                return 0
+        }
+        
+        return data.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        guard  let data = movieData else {
-            return cell
+        
+        guard let century = Century.init(rawValue: indexPath.section), let data = byCentury(century)
+            else {
+                return cell
         }
-        cell.textLabel?.text = movieData?[indexPath.row].title
+        
+        cell.textLabel?.text = data[indexPath.row].title
         cell.detailTextLabel?.text = String(data[indexPath.row].year)
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let century = Century.init(rawValue: section) else { return "" }
+        
+        switch century {
+        case .Twenty:
+            return "20th Century"
+        case .TwentyFirst:
+            return "21st Century"
+            
+        }
+    }
+    
+    func byCentury(_ century: Century) -> [Movie]? {
+        let filter: (Movie) -> Bool
+        switch century {
+        case .Twenty:
+            filter = { (a) -> Bool in
+                a.year < 2000
+            }
+        case .TwentyFirst:
+            filter = { (a) -> Bool in
+                a.year > 2000
+            }
+        }
+
+// after filtering, sort
+        let filtered = movieData?.filter(filter).sorted {  $0.year < $1.year }
+
+        return filtered
+    }
 }
+
