@@ -16,6 +16,7 @@
 		142842F41D921000007A1182 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142842F31D921000007A1182 /* Actor.swift */; };
 		142842FA1D926983007A1182 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142842F91D926983007A1182 /* Data.swift */; };
 		1E50DAC01D942C7400698228 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50DABF1D942C7400698228 /* MovieTableViewController.swift */; };
+		E3118C031D983A6400570909 /* movieControllerCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3118C021D983A6400570909 /* movieControllerCopy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		142842F31D921000007A1182 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		142842F91D926983007A1182 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1E50DABF1D942C7400698228 /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewController.swift; path = ViewControllers/MovieTableViewController.swift; sourceTree = "<group>"; };
+		E3118C021D983A6400570909 /* movieControllerCopy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movieControllerCopy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		142842C01D920F3C007A1182 = {
 			isa = PBXGroup;
 			children = (
+				E3118C011D983A5400570909 /* copy */,
 				142842CB1D920F3C007A1182 /* Tableviews_Part_1 */,
 				142842E01D920F3C007A1182 /* Tableviews_Part_1Tests */,
 				142842CA1D920F3C007A1182 /* Products */,
@@ -127,6 +130,14 @@
 				142842F31D921000007A1182 /* Actor.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		E3118C011D983A5400570909 /* copy */ = {
+			isa = PBXGroup;
+			children = (
+				E3118C021D983A6400570909 /* movieControllerCopy.swift */,
+			);
+			name = copy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				1E50DAC01D942C7400698228 /* MovieTableViewController.swift in Sources */,
 				142842CD1D920F3C007A1182 /* AppDelegate.swift in Sources */,
 				142842F21D920FF0007A1182 /* Movie.swift in Sources */,
+				E3118C031D983A6400570909 /* movieControllerCopy.swift in Sources */,
 				142842F41D921000007A1182 /* Actor.swift in Sources */,
 				142842FA1D926983007A1182 /* Data.swift in Sources */,
 			);
