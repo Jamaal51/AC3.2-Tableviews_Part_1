@@ -9,7 +9,10 @@
 import Foundation
 
 internal struct Movie {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
     internal var title: String
     internal var year: Int
     internal var genre: String
@@ -18,8 +21,12 @@ internal struct Movie {
     internal var summary: String
     
     init(from data: [String : Any]) {
+<<<<<<< HEAD
         // 1. Start by getting our property values and casting them..
         //    hint: use if let statements to check for values and cast them
+=======
+        //1. Start by getting our property values and casting them.. use if let statements to check for values and cast them
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
         if let movieTitle: String = data["name"] as? String,
             let movieYear: Int = data["year"] as? Int,
             let movieGenre: String = data["genre"] as? String,
@@ -36,8 +43,13 @@ internal struct Movie {
                 var castContainer: [Actor] = []
                 
                 for actorName in allActorNames {
+<<<<<<< HEAD
                     castContainer.append(Actor(from: actorName))
                     
+=======
+                    //time to update the Actor initalizer now
+                    castContainer.append(Actor(from: actorName))
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
                 }
                 
                 self.cast = castContainer
@@ -46,7 +58,10 @@ internal struct Movie {
                 self.cast = []
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
         else {
             self = Movie()
         }
@@ -54,10 +69,21 @@ internal struct Movie {
     
     init() {
         self.title = ""
+<<<<<<< HEAD
         self.year = 1970
+=======
+        self.year = 1973
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
         self.genre = ""
         self.cast = []
         self.locations = []
         self.summary = ""
+<<<<<<< HEAD
     }
  }
+=======
+        
+    }
+}
+
+>>>>>>> 338b20fedb9179bc195ccc634f30fc4f21719001
