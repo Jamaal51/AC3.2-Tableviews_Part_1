@@ -22,7 +22,7 @@ class MovieTableViewController: UITableViewController {
     }
     
     // choose either "genre" or "century" to output different table view with corresponding rows and details
-    var genreOrCentury = "century"
+    var genreOrCentury = "genre"
     
     internal var movieData: [Movie]?
     
