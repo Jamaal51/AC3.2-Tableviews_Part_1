@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0DB9FB143201BB83C2C9AE089DCB9B1624E45E40",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0DB9FB143201BB83C2C9AE089DCB9B1624E45E40" : 9223372036854775807,
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "984260FF-01EA-4DFE-B56F-9822BBC5CFE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0DB9FB143201BB83C2C9AE089DCB9B1624E45E40" : "AC3.2-Tableviews_Part_1\/",
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tableviews_Part_1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tableviews_Part_1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SimoneGrant\/AC3.2-Tableviews_Part_1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0DB9FB143201BB83C2C9AE089DCB9B1624E45E40"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SimoneGrant\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+    }
+  ]
+}
