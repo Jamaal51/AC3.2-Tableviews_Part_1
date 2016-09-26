@@ -14,6 +14,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A11-FF-lhF">
+                            <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Switch Display "/>
+                            <connections>
+                                <action selector="switchingDisplay:" destination="yet-gM-qc3" eventType="touchUpInside" id="6hn-Fe-NAP"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" textLabel="6Kt-NW-0d7" detailTextLabel="Ra1-j1-hx2" style="IBUITableViewCellStyleSubtitle" id="NQa-gd-usH">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
@@ -46,6 +54,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gWo-Yo-CxC"/>
+                    <connections>
+                        <outlet property="switchingDisplay" destination="A11-FF-lhF" id="9wG-47-rFb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHw-bd-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
